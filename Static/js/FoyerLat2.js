@@ -14,9 +14,9 @@ pannellum.viewer('panorama', {
         },
       ]
   })
-  function rit() {
+  document.getElementById('buttonbordered').addEventListener('click', function(e) {
     window.location.href = "../page/Mappa.html";
-  }
+  });
   function Freccia1(hotSpotDiv, args) {
     hotSpotDiv.classList.add('custom-hotspot');
     hotSpotDiv.onclick = function() {
