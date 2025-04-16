@@ -24,7 +24,7 @@ if (window.innerWidth > window.innerHeight) {
 } 
 pannellum.viewer('panorama', {
   "type": "equirectangular",
-  "panorama": "https://flaviocaputo.github.io/Teatro-Pirandello/Static/Panorama/untitled.jpeg",
+  "panorama": "../Panorama/untitled.jpeg",
   "haov": 180,
   "autoLoad": true,
   "showControls": false,
@@ -52,6 +52,14 @@ pannellum.viewer('panorama', {
       "cssClass": "custom-hotspot3",
       "text": "Stanza Laterale",
       "createTooltipFunc": Foyerlat,
+      "createTooltipArgs": "Custom Hotspot"
+    },
+    {
+      "pitch": -6.5,
+      "yaw": -26.5,
+      "cssClass": "custom-hotspot7",
+      "text": "Stanza Laterale",
+      "createTooltipFunc": Foyerlat2,
       "createTooltipArgs": "Custom Hotspot"
     },
     {

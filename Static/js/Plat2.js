@@ -26,7 +26,7 @@ if (hot === "true") {
 }
 viewer = pannellum.viewer('panorama', {
   "type": "equirectangular",
-  "panorama": "https://raw.githubusercontent.com/FlavioCaputo/Teatro-Pirandello/refs/heads/main/Static/Panorama/Pla3.jpeg",
+  "panorama": "../Panorama/Pla3.jpeg",
   "autoLoad": true,
   "showControls": false,
   "yaw": 90, 
@@ -90,7 +90,7 @@ viewer = pannellum.viewer('panorama', {
     "pitch": 36,
     "yaw": 11,
     "type": "info",
-    "createTooltipFunc": Sce,
+    "createTooltipFunc": Sce1,
   },
   {
     "pitch": 45.2,
@@ -120,7 +120,7 @@ viewer = pannellum.viewer('panorama', {
     "pitch": 36,
     "yaw": -181.5,
     "type": "info",
-    "createTooltipFunc": Sce1,
+    "createTooltipFunc": Sce,
   },
   {
     "pitch": 45,
@@ -691,7 +691,7 @@ const pos = [
 [13, 30],
 [13, 30],
 [43, 11],
-[36, 11],
+[36, -181],
 [43, -181],
 [49, -4],
 [48, 11],
@@ -702,7 +702,7 @@ const pos = [
 [3, 143],
 [1, 95],
 [3, 46],
-[36, -181],
+[36, 11],
 ]
 
 document.getElementById('buttonbordered').addEventListener('click', function(e) {
@@ -737,7 +737,6 @@ function cent(id) {
   Oggetto2.style.display = 'Block';
   Oggetto.style.display = 'Block';
 }
-
 document.onclick = function() {
   tir++;
   if (isMobile) {
@@ -794,7 +793,7 @@ function cap1(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Capitello pseudo-corinzio decorato con la lira.';
+  nuovoOggetto.textContent = 'Capitello pseudo-corinzio decorato con una lira.';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '120px';
   nuovoOggetto.style.height = '70px';
@@ -926,7 +925,7 @@ function cap3(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Capitello pseudo-corinzio decorato con un’aquila';
+  nuovoOggetto.textContent = 'Capitello pseudo-corinzio decorato con una tortorella';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '120px';
   nuovoOggetto.style.height = '70px';
@@ -2657,14 +2656,14 @@ function leo(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Dipinto di forma circolare di una medaglia';
+  nuovoOggetto.textContent = 'Dipinto di di forma circolare con testa di leone';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '125px';
   nuovoOggetto.style.height = '80px';
   nuovoOggetto.style.top = '-20px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
-  Oggetto2.textContent = "Dipinto di forma circolare, ad imitazione del bronzo, circondato da una cornice dorata e da un filetto di colore rosso, posto al centro di ciascun palco del primo secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità all’edifico, tempio della cultura. ";
+  Oggetto2.textContent = "Dipinto di forma circolare, di colore verde, con la raffigurazione di una testa di leone, circondato da una corona d’alloro e posto al centro di ciascun palco del secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità.";
   Oggetto2.style.left = "240px";
   Oggetto2.style.height = "260px";
   Oggetto2.style.bottom = "-115px";
@@ -3059,10 +3058,10 @@ function ligneo(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Fascia decorativa';
+  nuovoOggetto.textContent = 'Fascia decorativa tra i capitelli';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '140px';
-  nuovoOggetto.style.height = '30px';
+  nuovoOggetto.style.height = '50px';
   nuovoOggetto.style.top = '30px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
@@ -3127,10 +3126,10 @@ function ligneo1(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Fascia decorativa';
+  nuovoOggetto.textContent = 'Fascia decorativa tra i capitelli';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '140px';
-  nuovoOggetto.style.height = '30px';
+  nuovoOggetto.style.height = '50px';
   nuovoOggetto.style.top = '30px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
@@ -3195,10 +3194,10 @@ function Sce(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Scena mitologica';
+  nuovoOggetto.textContent = 'Dipinto di forma semicircolare';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '120px';
-  nuovoOggetto.style.height = '30px';
+  nuovoOggetto.style.height = '50px';
   nuovoOggetto.style.top = '30px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
@@ -3262,14 +3261,14 @@ function Sce1(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Scena mitologica';
+  nuovoOggetto.textContent = 'Dipinto di forma semicircolare';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '120px';
-  nuovoOggetto.style.height = '30px';
+  nuovoOggetto.style.height = '50px';
   nuovoOggetto.style.top = '30px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
-  Oggetto2.textContent = "";
+  Oggetto2.textContent = "Coro di ninfe su nuvole con un putto alato che sorregge il mantello di una ninfa. La scena è ambientata su una nuvola, tipica raffigurazione di un ambiente divino o ultraterreno, caratteristico delle rappresentazioni mitologiche. Gli ornati delle superfici triangolari mistilinei sono decorati con motivi floreali e vegetali alla maniera raffaellesca. Il dipinto è stato realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno dell’illustre architetto palermitano Giovan Battista Filippo Basile (1875).";
   Oggetto2.style.left = "360px";
   Oggetto2.style.height = "260px";
   Oggetto2.style.bottom = "-115px";
@@ -3329,14 +3328,14 @@ function l(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Cartiglio su fondo color oro';
+  nuovoOggetto.textContent = 'Decorazione del fregio della bocca d’opera';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '125px';
-  nuovoOggetto.style.height = '45px';
-  nuovoOggetto.style.top = '15px';
+  nuovoOggetto.style.height = '70px';
+  nuovoOggetto.style.top = '0px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
-  Oggetto2.textContent = "Cartiglio su fondo color oro, costituito da un putto alato fitomorfo che sorregge una ghirlanda intrecciata da un nastro rosa, al centro della quale vi è il cognome del celebre compositore Giovanni Pacini (Catania, 11 febbraio 1796 – Pescia, 6 dicembre 1867). Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno dell’illustre architetto palermitano Giovan Battista Filippo Basile (1875).";
+  Oggetto2.textContent = "Decorazione del fregio della bocca d’opera, costituito da un putto alato fitomorfo che sorregge una ghirlanda intrecciata da un nastro rosa, al centro della quale vi è il cognome del celebre compositore Giovanni Pacini (Catania, 11 febbraio 1796 – Pescia, 6 dicembre 1867). Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno dell’illustre architetto palermitano Giovan Battista Filippo Basile (1875).";
   Oggetto2.style.left = "240px";
   Oggetto2.style.height = "260px";
   Oggetto2.style.bottom = "-115px";
@@ -3396,14 +3395,14 @@ function c(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Cartiglio su fondo color oro';
+  nuovoOggetto.textContent = 'Decorazione del fregio della bocca d’opera';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '125px';
-  nuovoOggetto.style.height = '45px';
-  nuovoOggetto.style.top = '15px';
+  nuovoOggetto.style.height = '70px';
+  nuovoOggetto.style.top = '0px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
-  Oggetto2.textContent = "Cartiglio su fondo color oro, costituito da un putto alato fitomorfo che sorregge una ghirlanda intrecciata da un nastro rosa, al centro della quale vi è il cognome del celebre compositore Vincenzo Bellini (Catania 1801 - Puteaux, Parigi, 1835). Il dipinto è stato realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno dell’illustre architetto palermitano Giovan Battista Filippo Basile (1875).";
+  Oggetto2.textContent = "Decorazione del fregio della bocca d’opera, costituito da un putto alato fitomorfo che sorregge una ghirlanda intrecciata da un nastro rosa, al centro della quale vi è il cognome del celebre compositore Vincenzo Bellini (Catania 1801 - Puteaux, Parigi, 1835). Il dipinto è stato realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno dell’illustre architetto palermitano Giovan Battista Filippo Basile (1875).";
   Oggetto2.style.left = "240px";
   Oggetto2.style.height = "260px";
   Oggetto2.style.bottom = "-115px";
@@ -3463,14 +3462,14 @@ function r(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Cartiglio su fondo color oro';
+  nuovoOggetto.textContent = 'Decorazione del fregio della bocca d’opera';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '125px';
-  nuovoOggetto.style.height = '45px';
-  nuovoOggetto.style.top = '15px';
+  nuovoOggetto.style.height = '70px';
+  nuovoOggetto.style.top = '0px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
-  Oggetto2.textContent = "Cartiglio su fondo color oro, costituito da un putto alato fitomorfo che sorregge una ghirlanda intrecciata da un nastro rosa, al centro della quale vi è il cognome del celebre compositore Giuseppe Verdi (Giuseppe Fortunino Francesco Verdi, Le Roncole, 10 ottobre 1813 – Milano, 27 gennaio 1901). Il dipinto è stato realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno dell’illustre architetto palermitano Giovan Battista Filippo Basile (1875).";
+  Oggetto2.textContent = "Decorazione del fregio della bocca d’opera, costituito da un putto alato fitomorfo che sorregge una ghirlanda intrecciata da un nastro rosa, al centro della quale vi è il cognome del celebre compositore Giuseppe Verdi (Giuseppe Fortunino Francesco Verdi, Le Roncole, 10 ottobre 1813 – Milano, 27 gennaio 1901). Il dipinto è stato realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno dell’illustre architetto palermitano Giovan Battista Filippo Basile (1875).";
   Oggetto2.style.left = "240px";
   Oggetto2.style.height = "260px";
   Oggetto2.style.bottom = "-115px";
@@ -3530,14 +3529,14 @@ function l1(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Cartiglio su fondo color oro';
+  nuovoOggetto.textContent = 'Decorazione del fregio della bocca d’opera';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '125px';
-  nuovoOggetto.style.height = '45px';
-  nuovoOggetto.style.top = '15px';
+  nuovoOggetto.style.height = '70px';
+  nuovoOggetto.style.top = '0px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
-  Oggetto2.textContent = "Cartiglio con putto alato fitomorfo che sorregge una corona di alloro al centro della quale vi è il cognome del celebre compositore Gaetano Domenico Maria Donizetti (Bergamo, 29 novembre 1797 – Bergamo, 8 aprile 1848). Il dipinto è stato realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno dell’illustre architetto palermitano Giovan Battista Filippo Basile (1875).";
+  Oggetto2.textContent = "Decorazione del fregio della bocca d’opera, costituito da un putto alato fitomorfo che sorregge una corona di alloro al centro della quale vi è il cognome del celebre compositore Gaetano Domenico Maria Donizetti (Bergamo, 29 novembre 1797 – Bergamo, 8 aprile 1848). Il dipinto è stato realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno dell’illustre architetto palermitano Giovan Battista Filippo Basile (1875).";
   Oggetto2.style.left = "240px";
   Oggetto2.style.height = "260px";
   Oggetto2.style.bottom = "-115px";
@@ -3597,14 +3596,14 @@ function c1(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Cartiglio su fondo color oro';
+  nuovoOggetto.textContent = 'Decorazione del fregio della bocca d’opera';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '125px';
-  nuovoOggetto.style.height = '45px';
-  nuovoOggetto.style.top = '15px';
+  nuovoOggetto.style.height = '70px';
+  nuovoOggetto.style.top = '0px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
-  Oggetto2.textContent = "Cartiglio con fondo color oro sul quale sono raffigurati due putti alati fitomorfi che sorreggono che sorreggono una ghirlanda di alloro al centro della quale vi è il cognome del celebre compositore Gioachino Rossini (Pesaro, 29 febbraio 1792 – Passy, 13 novembre 1868). Il dipinto è stato realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno dell’illustre architetto palermitano Giovan Battista Filippo Basile (1875).";
+  Oggetto2.textContent = "Decorazione del fregio della bocca d’opera sul quale sono raffigurati due putti alati fitomorfi che sorreggono che sorreggono una ghirlanda di alloro al centro della quale vi è il cognome del celebre compositore Gioachino Rossini (Pesaro, 29 febbraio 1792 – Passy, 13 novembre 1868). Il dipinto è stato realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno dell’illustre architetto palermitano Giovan Battista Filippo Basile (1875).";
   Oggetto2.style.left = "240px";
   Oggetto2.style.height = "260px";
   Oggetto2.style.bottom = "-115px";
@@ -3664,14 +3663,14 @@ function r1(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Cartiglio su fondo color oro';
+  nuovoOggetto.textContent = 'Decorazione del fregio della bocca d’opera';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '125px';
-  nuovoOggetto.style.height = '45px';
-  nuovoOggetto.style.top = '15px';
+  nuovoOggetto.style.height = '70px';
+  nuovoOggetto.style.top = '0px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
-  Oggetto2.textContent = "Cartiglio con putto alato fitomorfo che sorregge una corona di alloro al centro della quale vi è il cognome del celebre compositore Errico Petrella, detto Petrel (Palermo, 10 dicembre 1813 – Genova, 7 aprile 1877). Il dipinto è stato realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno dell’illustre architetto palermitano Giovan Battista Filippo Basile (1875).";
+  Oggetto2.textContent = "Decorazione del fregio della bocca d’opera, costituito da un putto alato fitomorfo che sorregge una corona di alloro al centro della quale vi è il cognome del celebre compositore Errico Petrella, detto Petrel (Palermo, 10 dicembre 1813 – Genova, 7 aprile 1877). Il dipinto è stato realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno dell’illustre architetto palermitano Giovan Battista Filippo Basile (1875).";
   Oggetto2.style.left = "240px";
   Oggetto2.style.height = "260px";
   Oggetto2.style.bottom = "-115px";
@@ -3765,7 +3764,7 @@ function arc(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Architrave dell’ingresso laterale sinistro';
+  nuovoOggetto.textContent = 'Fregio dell’ingresso laterale sinistro';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '140px';
   var Oggetto2 = document.createElement('div');
@@ -3831,7 +3830,7 @@ function arc1(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Architrave dell’ingresso centrale';
+  nuovoOggetto.textContent = 'Fregio dell’ingresso centrale';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '140px';
   var Oggetto2 = document.createElement('div');
@@ -3897,7 +3896,7 @@ function arc2(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Architrave dell’ingresso laterale destro';
+  nuovoOggetto.textContent = 'Fregio dell’ingresso laterale destro';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '140px';
   var Oggetto2 = document.createElement('div');
@@ -3964,14 +3963,14 @@ function leo1(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Dipinto di forma circolare di una medaglia';
+  nuovoOggetto.textContent = 'Dipinto di di forma circolare con testa di leone';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '125px';
   nuovoOggetto.style.height = '80px';
   nuovoOggetto.style.top = '-20px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
-  Oggetto2.textContent = "Dipinto di forma circolare, ad imitazione del bronzo, circondato da una cornice dorata e da un filetto di colore rosso, posto al centro di ciascun palco del primo secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità all’edifico, tempio della cultura. ";
+  Oggetto2.textContent = "Dipinto di forma circolare, di colore verde, con la raffigurazione di una testa di leone, circondato da una corona d’alloro e posto al centro di ciascun palco del secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità.";
   Oggetto2.style.left = "240px";
   Oggetto2.style.height = "260px";
   Oggetto2.style.bottom = "-115px";
@@ -4031,14 +4030,14 @@ function leo2(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Dipinto di forma circolare di una medaglia';
+  nuovoOggetto.textContent = 'Dipinto di di forma circolare con testa di leone';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '125px';
   nuovoOggetto.style.height = '80px';
   nuovoOggetto.style.top = '-20px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
-  Oggetto2.textContent = "Dipinto di forma circolare, ad imitazione del bronzo, circondato da una cornice dorata e da un filetto di colore rosso, posto al centro di ciascun palco del primo secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità all’edifico, tempio della cultura. ";
+  Oggetto2.textContent = "Dipinto di forma circolare, di colore verde, con la raffigurazione di una testa di leone, circondato da una corona d’alloro e posto al centro di ciascun palco del secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità.";
   Oggetto2.style.left = "240px";
   Oggetto2.style.height = "260px";
   Oggetto2.style.bottom = "-115px";
@@ -4098,14 +4097,14 @@ function leo3(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Dipinto di forma circolare di una medaglia';
+  nuovoOggetto.textContent = 'Dipinto di di forma circolare con testa di leone';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '125px';
   nuovoOggetto.style.height = '80px';
   nuovoOggetto.style.top = '-20px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
-  Oggetto2.textContent = "Dipinto di forma circolare, ad imitazione del bronzo, circondato da una cornice dorata e da un filetto di colore rosso, posto al centro di ciascun palco del primo secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità all’edifico, tempio della cultura. ";
+  Oggetto2.textContent = "Dipinto di forma circolare, di colore verde, con la raffigurazione di una testa di leone, circondato da una corona d’alloro e posto al centro di ciascun palco del secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità.";
   Oggetto2.style.left = "240px";
   Oggetto2.style.height = "260px";
   Oggetto2.style.bottom = "-115px";
@@ -4165,14 +4164,14 @@ function leo4(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Dipinto di forma circolare di una medaglia';
+  nuovoOggetto.textContent = 'Dipinto di di forma circolare con testa di leone';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '125px';
   nuovoOggetto.style.height = '80px';
   nuovoOggetto.style.top = '-20px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
-  Oggetto2.textContent = "Dipinto di forma circolare, ad imitazione del bronzo, circondato da una cornice dorata e da un filetto di colore rosso, posto al centro di ciascun palco del primo secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità all’edifico, tempio della cultura. ";
+  Oggetto2.textContent = "Dipinto di forma circolare, di colore verde, con la raffigurazione di una testa di leone, circondato da una corona d’alloro e posto al centro di ciascun palco del secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità.";
   Oggetto2.style.left = "240px";
   Oggetto2.style.height = "260px";
   Oggetto2.style.bottom = "-115px";
@@ -4232,14 +4231,14 @@ function leo5(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Dipinto di forma circolare di una medaglia';
+  nuovoOggetto.textContent = 'Dipinto di di forma circolare con testa di leone';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '125px';
   nuovoOggetto.style.height = '80px';
   nuovoOggetto.style.top = '-20px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
-  Oggetto2.textContent = "Dipinto di forma circolare, ad imitazione del bronzo, circondato da una cornice dorata e da un filetto di colore rosso, posto al centro di ciascun palco del primo secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità all’edifico, tempio della cultura. ";
+  Oggetto2.textContent = "Dipinto di forma circolare, di colore verde, con la raffigurazione di una testa di leone, circondato da una corona d’alloro e posto al centro di ciascun palco del secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità.";
   Oggetto2.style.left = "240px";
   Oggetto2.style.height = "260px";
   Oggetto2.style.bottom = "-115px";
@@ -4299,14 +4298,14 @@ function leo6(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Dipinto di forma circolare di una medaglia';
+  nuovoOggetto.textContent = 'Dipinto di di forma circolare con testa di leone';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '125px';
   nuovoOggetto.style.height = '80px';
   nuovoOggetto.style.top = '-20px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
-  Oggetto2.textContent = "Dipinto di forma circolare, ad imitazione del bronzo, circondato da una cornice dorata e da un filetto di colore rosso, posto al centro di ciascun palco del primo secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità all’edifico, tempio della cultura. ";
+  Oggetto2.textContent = "Dipinto di forma circolare, di colore verde, con la raffigurazione di una testa di leone, circondato da una corona d’alloro e posto al centro di ciascun palco del secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità.";
   Oggetto2.style.left = "240px";
   Oggetto2.style.height = "260px";
   Oggetto2.style.bottom = "-115px";
@@ -4366,14 +4365,14 @@ function leo7(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Dipinto di forma circolare di una medaglia';
+  nuovoOggetto.textContent = 'Dipinto di di forma circolare con testa di leone';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '125px';
   nuovoOggetto.style.height = '80px';
   nuovoOggetto.style.top = '-20px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
-  Oggetto2.textContent = "Dipinto di forma circolare, ad imitazione del bronzo, circondato da una cornice dorata e da un filetto di colore rosso, posto al centro di ciascun palco del primo secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità all’edifico, tempio della cultura. ";
+  Oggetto2.textContent = "Dipinto di forma circolare, di colore verde, con la raffigurazione di una testa di leone, circondato da una corona d’alloro e posto al centro di ciascun palco del secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità.";
   Oggetto2.style.left = "240px";
   Oggetto2.style.height = "260px";
   Oggetto2.style.bottom = "-115px";
@@ -4433,14 +4432,14 @@ function leo8(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Dipinto di forma circolare di una medaglia';
+  nuovoOggetto.textContent = 'Dipinto di di forma circolare con testa di leone';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '125px';
   nuovoOggetto.style.height = '80px';
   nuovoOggetto.style.top = '-20px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
-  Oggetto2.textContent = "Dipinto di forma circolare, ad imitazione del bronzo, circondato da una cornice dorata e da un filetto di colore rosso, posto al centro di ciascun palco del primo secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità all’edifico, tempio della cultura. ";
+  Oggetto2.textContent = "Dipinto di forma circolare, di colore verde, con la raffigurazione di una testa di leone, circondato da una corona d’alloro e posto al centro di ciascun palco del secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità.";
   Oggetto2.style.left = "240px";
   Oggetto2.style.height = "260px";
   Oggetto2.style.bottom = "-115px";
@@ -4500,14 +4499,14 @@ function leo9(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Dipinto di forma circolare di una medaglia';
+  nuovoOggetto.textContent = 'Dipinto di di forma circolare con testa di leone';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '125px';
   nuovoOggetto.style.height = '80px';
   nuovoOggetto.style.top = '-20px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
-  Oggetto2.textContent = "Dipinto di forma circolare, ad imitazione del bronzo, circondato da una cornice dorata e da un filetto di colore rosso, posto al centro di ciascun palco del primo secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità all’edifico, tempio della cultura. ";
+  Oggetto2.textContent = "Dipinto di forma circolare, di colore verde, con la raffigurazione di una testa di leone, circondato da una corona d’alloro e posto al centro di ciascun palco del secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità.";
   Oggetto2.style.left = "240px";
   Oggetto2.style.height = "260px";
   Oggetto2.style.bottom = "-115px";
@@ -4567,14 +4566,14 @@ function leo10(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Dipinto di forma circolare di una medaglia';
+  nuovoOggetto.textContent = 'Dipinto di di forma circolare con testa di leone';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '125px';
   nuovoOggetto.style.height = '80px';
   nuovoOggetto.style.top = '-20px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
-  Oggetto2.textContent = "Dipinto di forma circolare, ad imitazione del bronzo, circondato da una cornice dorata e da un filetto di colore rosso, posto al centro di ciascun palco del primo secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità all’edifico, tempio della cultura. ";
+  Oggetto2.textContent = "Dipinto di forma circolare, di colore verde, con la raffigurazione di una testa di leone, circondato da una corona d’alloro e posto al centro di ciascun palco del secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità.";
   Oggetto2.style.left = "240px";
   Oggetto2.style.height = "260px";
   Oggetto2.style.bottom = "-115px";
@@ -4634,14 +4633,14 @@ function leo11(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Dipinto di forma circolare di una medaglia';
+  nuovoOggetto.textContent = 'Dipinto di di forma circolare con testa di leone';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '125px';
   nuovoOggetto.style.height = '80px';
   nuovoOggetto.style.top = '-20px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
-  Oggetto2.textContent = "Dipinto di forma circolare, ad imitazione del bronzo, circondato da una cornice dorata e da un filetto di colore rosso, posto al centro di ciascun palco del primo secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità all’edifico, tempio della cultura. ";
+  Oggetto2.textContent = "Dipinto di forma circolare, di colore verde, con la raffigurazione di una testa di leone, circondato da una corona d’alloro e posto al centro di ciascun palco del secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità.";
   Oggetto2.style.left = "240px";
   Oggetto2.style.height = "260px";
   Oggetto2.style.bottom = "-115px";
@@ -4701,14 +4700,14 @@ function leo12(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Dipinto di forma circolare di una medaglia';
+  nuovoOggetto.textContent = 'Dipinto di di forma circolare con testa di leone';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '125px';
   nuovoOggetto.style.height = '80px';
   nuovoOggetto.style.top = '-20px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
-  Oggetto2.textContent = "Dipinto di forma circolare, ad imitazione del bronzo, circondato da una cornice dorata e da un filetto di colore rosso, posto al centro di ciascun palco del primo secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità all’edifico, tempio della cultura. ";
+  Oggetto2.textContent = "Dipinto di forma circolare, di colore verde, con la raffigurazione di una testa di leone, circondato da una corona d’alloro e posto al centro di ciascun palco del secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità.";
   Oggetto2.style.left = "240px";
   Oggetto2.style.height = "260px";
   Oggetto2.style.bottom = "-115px";
@@ -4768,14 +4767,14 @@ function leo13(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Dipinto di forma circolare di una medaglia';
+  nuovoOggetto.textContent = 'Dipinto di di forma circolare con testa di leone';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '125px';
   nuovoOggetto.style.height = '80px';
   nuovoOggetto.style.top = '-20px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
-  Oggetto2.textContent = "Dipinto di forma circolare, ad imitazione del bronzo, circondato da una cornice dorata e da un filetto di colore rosso, posto al centro di ciascun palco del primo secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità all’edifico, tempio della cultura. ";
+  Oggetto2.textContent = "Dipinto di forma circolare, di colore verde, con la raffigurazione di una testa di leone, circondato da una corona d’alloro e posto al centro di ciascun palco del secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità.";
   Oggetto2.style.left = "240px";
   Oggetto2.style.height = "260px";
   Oggetto2.style.bottom = "-115px";
@@ -4835,14 +4834,14 @@ function leo14(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Dipinto di forma circolare di una medaglia';
+  nuovoOggetto.textContent = 'Dipinto di di forma circolare con testa di leone';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '125px';
   nuovoOggetto.style.height = '80px';
   nuovoOggetto.style.top = '-20px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
-  Oggetto2.textContent = "Dipinto di forma circolare, ad imitazione del bronzo, circondato da una cornice dorata e da un filetto di colore rosso, posto al centro di ciascun palco del primo secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità all’edifico, tempio della cultura. ";
+  Oggetto2.textContent = "Dipinto di forma circolare, di colore verde, con la raffigurazione di una testa di leone, circondato da una corona d’alloro e posto al centro di ciascun palco del secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità.";
   Oggetto2.style.left = "240px";
   Oggetto2.style.height = "260px";
   Oggetto2.style.bottom = "-115px";
@@ -4902,14 +4901,14 @@ function leo15(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Dipinto di forma circolare di una medaglia';
+  nuovoOggetto.textContent = 'Dipinto di di forma circolare con testa di leone';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '125px';
   nuovoOggetto.style.height = '80px';
   nuovoOggetto.style.top = '-20px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
-  Oggetto2.textContent = "Dipinto di forma circolare, ad imitazione del bronzo, circondato da una cornice dorata e da un filetto di colore rosso, posto al centro di ciascun palco del primo secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità all’edifico, tempio della cultura. ";
+  Oggetto2.textContent = "Dipinto di forma circolare, di colore verde, con la raffigurazione di una testa di leone, circondato da una corona d’alloro e posto al centro di ciascun palco del secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità.";
   Oggetto2.style.left = "240px";
   Oggetto2.style.height = "260px";
   Oggetto2.style.bottom = "-115px";
@@ -4969,14 +4968,14 @@ function leo16(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Dipinto di forma circolare di una medaglia';
+  nuovoOggetto.textContent = 'Dipinto di di forma circolare con testa di leone';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '125px';
   nuovoOggetto.style.height = '80px';
   nuovoOggetto.style.top = '-20px';
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('sc'); 
-  Oggetto2.textContent = "Dipinto di forma circolare, ad imitazione del bronzo, circondato da una cornice dorata e da un filetto di colore rosso, posto al centro di ciascun palco del primo secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità all’edifico, tempio della cultura. ";
+  Oggetto2.textContent = "Dipinto di forma circolare, di colore verde, con la raffigurazione di una testa di leone, circondato da una corona d’alloro e posto al centro di ciascun palco del secondo ordine. Il dipinto, realizzato dai pittori milanesi Luigi Sacco e Antonio Tavella tra il 1876 e il 1879, su disegno del celebre architetto palermitano Giovan Battista Filippo Basile (1875), riproduce una testa di leone circondata da una ghirlanda anch’essa di colore verde. Nel mondo greco la testa di leone era una decorazione che aveva molteplici significati simbolici, come potenza, audacia, saggezza, coraggio, regalità, prestigio, protezione apotropaica. Il leone, infatti, era visto come un guardiano, un protettore. Nei templi, oltre alla loro funzione pratica ed estetica, conferiva sacralità agli edifici. Spesso il leone era associato a divinità come Apollo (nella religione greca e romana, il dio della musica, delle arti mediche, delle scienze, dell'intelletto e della profezia) e a Eracle, eroe e semidio della mitologia greca (Ercole per i Romani), incarnazione della forza fisica e del coraggio. La presenza della testa di leone tra le decorazioni pittoriche del Teatro “Pirandello” di Agrigento simboleggia, dunque, la potenza, il prestigio, le ambizioni e le gloriose origini greche della città e ne sottolinea l'identità culturale. Al contempo conferisce all’edificio protezione, sacralità e monumentalità.";
   Oggetto2.style.left = "240px";
   Oggetto2.style.height = "260px";
   Oggetto2.style.bottom = "-115px";

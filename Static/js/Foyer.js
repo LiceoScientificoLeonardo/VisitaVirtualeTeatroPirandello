@@ -19,7 +19,7 @@ var l;
 var us = true;
 viewer = pannellum.viewer('panorama', {
   "type": "equirectangular",
-  "panorama": "https://raw.githubusercontent.com/FlavioCaputo/Teatro-Pirandello/refs/heads/main/Static/Panorama/foyer.jpg",
+  "panorama": "../Panorama/foyer.jpg",
   "autoLoad": true,
   "showControls": false,
   "yaw": inc, 
@@ -295,7 +295,7 @@ function Alfieri(hotSpotDiv, args) {
     nuovoOggetto.style.fontSize = "11px";
     nuovoOggetto.style.width = '140px';
   } else {
-    testo.style.bottom = '-120px';
+    testo.style.bottom = '-100px';
     nuovoOggetto.style.fontSize = "12px";
   }
   Oggetto2.appendChild(x);
@@ -408,7 +408,7 @@ function Goldoni(hotSpotDiv, args) {
     nuovoOggetto.style.height = '55px';
     nuovoOggetto.style.top = '5px';
   } else {
-    testo.style.bottom = '-130px';
+    testo.style.bottom = '-160px';
     nuovoOggetto.style.fontSize = "14px";
   }
   Oggetto2.appendChild(x);
@@ -476,7 +476,7 @@ function Metastasio(hotSpotDiv, args) {
     nuovoOggetto.style.fontSize = "13px";
     nuovoOggetto.style.width = '130px'; 
   } else {
-    testo.style.bottom = '-138px';
+    testo.style.bottom = '-100px';
     nuovoOggetto.style.fontSize = "12px";
   }
   Oggetto2.appendChild(x);
@@ -526,7 +526,7 @@ function Monti(hotSpotDiv, args) {
   nuovoOggetto.textContent = 'Ritratto di Vincenzo Monti (Alfonsine, 19 febbraio 1754 – Milano, 13 ottobre 1828)';
   nuovoOggetto.classList.add('info');  
   nuovoOggetto.style.fontSize = '16px';
-  nuovoOggetto.style.width = '120px';
+  nuovoOggetto.style.width = '140px';
   nuovoOggetto.style.height = '70px';
   nuovoOggetto.style.top = '-10px';
   //imagine e testo
@@ -544,7 +544,7 @@ function Monti(hotSpotDiv, args) {
     nuovoOggetto.style.fontSize = "13px";
     nuovoOggetto.style.width = '140px';
   } else {
-    testo.style.bottom = '-130px';
+    testo.style.bottom = '-120px';
     nuovoOggetto.style.fontSize = "12px";
   }
   Oggetto2.appendChild(x);
@@ -589,7 +589,7 @@ function abito1(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Abito del baritono Giovan Battista Inghilleri';
+  nuovoOggetto.textContent = 'Abito di scena del baritono Giovan Battista Inghilleri';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '120px';
   nuovoOggetto.style.height = '70px';
@@ -658,7 +658,7 @@ function abito2(hotSpotDiv, args) {
   };
   hotSpotDiv.classList.add('custom-hotspot'); // Aggiungi una classe al hotspot per identificarlo
   var nuovoOggetto = document.createElement('div');
-  nuovoOggetto.textContent = 'Abito del baritono Giovan Battista Inghilleri';
+  nuovoOggetto.textContent = 'Abito di scena del baritono Giovan Battista Inghilleri';
   nuovoOggetto.classList.add('info'); 
   nuovoOggetto.style.width = '120px';
   nuovoOggetto.style.height = '70px';
@@ -736,7 +736,7 @@ function Lapide06(hotSpotDiv, args) {
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('Lap06'); 
   var testo = document.createElement('p');
-  testo.textContent = "Lapide che ricorda la donazione della “Copia del grande sipario storico Il trionfo di Esseneto” da parte del produttore teatrale nazionale agrigentino Francesco Bellomo";
+  testo.textContent = "Lapide che ricorda la donazione della copia del grande sipario storico “Il trionfo di Esseneto” da parte del produttore teatrale nazionale agrigentino Francesco Bellomo";
   testo.classList.add('text');
   var x = document.createElement('p');
   x.classList.add('text-x');
@@ -817,7 +817,7 @@ function Lapide95(hotSpotDiv, args) {
     nuovoOggetto.style.height = '55px';
     nuovoOggetto.style.top = '5px';
   } else {
-    testo.style.bottom = '-65px';
+    testo.style.bottom = '-78px';
   }
   Oggetto2.appendChild(x);
   Oggetto2.appendChild(testo);
@@ -929,11 +929,11 @@ function PlanL(hotSpotDiv, args) {
   var nuovoOggetto = document.createElement('div');
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('ProgettoL'); 
-  nuovoOggetto.textContent = 'Progetto del Teatro vista laterale';
+  nuovoOggetto.textContent = 'Progetto del Teatro: vista laterale';
   nuovoOggetto.classList.add('info');  
   nuovoOggetto.style.width = '160px';
-  nuovoOggetto.style.height = '85px';
-  nuovoOggetto.style.top = '-30px';
+  nuovoOggetto.style.height = '90px';
+  nuovoOggetto.style.top = '-25px';
   var testo = document.createElement('p');
   testo.textContent = "Elaborati grafici di progetto del teatro, pianta con sezione trasversale con veduta di:\n ●palcoscenico e torre scenica\n ●sala con platea e palchi\n ●ingresso – vestibolo soprastante il foyer\n ●atrio e porticato di ingresso";
   testo.classList.add('text');
@@ -997,11 +997,11 @@ function PlanF(hotSpotDiv, args) {
   var nuovoOggetto = document.createElement('div');
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('ProgettoF'); 
-  nuovoOggetto.textContent = 'Progetto del Teatro vista Frontale';
+  nuovoOggetto.textContent = 'Progetto del Teatro: vista laterale';
   nuovoOggetto.classList.add('info');  
   nuovoOggetto.style.width = '160px';
-  nuovoOggetto.style.height = '85px';
-  nuovoOggetto.style.top = '-30px';
+  nuovoOggetto.style.height = '90px';
+  nuovoOggetto.style.top = '-25px';
   var testo = document.createElement('p');
   testo.textContent = "Elaborati grafici di progetto del teatro, pianta con sezione trasversale con veduta di:\n ●sala con platea e palchi\n ●volta in gesso con cannucciato e copertura";
   testo.classList.add('text');
@@ -1065,9 +1065,11 @@ function PlanT(hotSpotDiv, args) {
   var nuovoOggetto = document.createElement('div');
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('ProgettoT'); 
-  nuovoOggetto.textContent = 'Planimetria del Teatro';
+  nuovoOggetto.textContent = 'Progetto del Teatro: vista laterale';
   nuovoOggetto.classList.add('info');  
   nuovoOggetto.style.width = '160px';
+  nuovoOggetto.style.height = '90px';
+  nuovoOggetto.style.top = '-25px';
   var testo = document.createElement('p');
   testo.textContent = "Elaborati grafici di progetto del teatro, pianta con veduta di:\n ●palcoscenico e torre scenica\n ●sala con platea e palchi\n ●ingresso e vestibolo\n ●atrio e porticato di ingresso";
   testo.classList.add('text');
