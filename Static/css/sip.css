@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(231, 231, 191);
+}
+::-webkit-scrollbar {
+    width: 0;
+    background-color: transparent; /* Imposta il colore di sfondo della barra di scorrimento trasparente */
+}
+/*
+testo
+*/
+#title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 180px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 
+        -1px -1px 0 white,  
+         1px -1px 0 white,
+        -1px  1px 0 white,
+         1px  1px 0 white;
+}
+#titoli {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: -30px;
+}
+#testo {
+    margin-top: 15px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center; /* Centra gli elementi lungo l'asse principale (orizzontalmente) */
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+
+/*
+    Parte iniziale alta
+*/
+#header {
+    font-family: "Times New Roman", Times, serif;
+    position: fixed;
+    height: 250px;
+    background-image: url("../pics/sipario/sipario.png"); /* Opacità per una migliore leggibilità */
+    background-repeat: no-repeat;
+    background-position: 0px -500px;
+    background-size: cover;
+    transition: top 0.3s ease-in-out; /* Aggiungi transizione per effetto di scorrimento */
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center; /* Centra gli elementi lungo l'asse principale (orizzontalmente) */
+    align-items: center;
+    top: 0%;
+    z-index: 3;
+}
+.header-content {
+    padding: 0px;
+}
+.header-content img {
+    max-width: 100%;
+    height: auto;
+}
+/*
+background
+*/
+#bc {
+    background-color: rgb(231, 231, 191); /* Percorso dell'immagine */
+    background-size: cover; /* Adatta l'immagine per coprire tutto l'elemento */
+    background-position: center; /* Centra l'immagine */ /* Altezza della finestra del browser */
+    transition: opacity 1s ease;
+}
+  /*
+pulsante per home
+*/
+#buttonbordered {
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    margin-top: -70px;
+    margin-left: 52%;
+    background-color:rgba(0, 0, 0, 0.038);
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    cursor: pointer; /* Cambia il cursore quando si passa sopra il pulsante */
+    border: 0.5px solid black;
+}
+#buttonbordered::before,
+#buttonbordered::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 25px;
+    border-radius: 4px;
+    top: 25px;
+    background-color: #000;
+}
+
+#buttonbordered::before {
+    left: 15px;
+}
+
+#buttonbordered::after {
+    right: 15px;
+}
+#casa {
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    border-radius: 4px;
+    left: 15px;
+    top: 25px;
+    background-color: #000;
+}
+#casa::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 22px;
+    border-radius: 4px;
+    left: -5px;
+    top: -20px;
+    background-color: #000;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+#casa::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 40px;
+    border-radius: 2px;
+    left: 26px;
+    top: -20px;
+    background-color: #000;
+}
+/* divisione*/
+.parte1 {
+    display: flex;
+    margin-top: 13.6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-column {
+    flex: 1;
+    margin-top: -130px; 
+    padding-left: 20px;
+    padding: 20px 80px; 
+    text-align: center; /* Centra il testo orizzontalmente */
+}
+.image-column {
+    margin-top: -10%; 
+    display: flex;
+    justify-content: center; /* Centra l'immagine orizzontalmente */
+    align-items: center; /* Centra l'immagine verticalmente */
+    padding-left: 20px;
+    flex: 1;
+    text-align: center; /* Opzionale: centra l'immagine orizzontalmente all'interno della colonna */
+}
+.image-column img {
+    max-width: 80%;
+    transform: rotate(-10deg); /* Ruota l'immagine di 45 gradi */
+    height: 46%;
+    display: block;
+    border: 20px solid #ddd; /* Definisce uno stile di bordo */
+    border-bottom: 80px solid #ddd;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra */
+    z-index: 1;
+}
+.vedere {
+    transform: translate(-50%, -37%) scale(1.5) rotate(10deg);; /* Ingrandisce il pulsante */
+    padding: 50%, 10%;
+  }
+/*
+Overlay
+*/
+#bot {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#Overlayimg {
+    font-family: "Times New Roman", Times, serif;
+    position: fixed;
+    top: -300px; /* Nascondi l'intestazione all'inizio */
+    height: 200%;
+    transition: top 0.3s ease-in-out; /* Aggiungi transizione per effetto di scorrimento */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.148);
+    z-index: 7; /* Assicura che l'intestazione sia sopra l'immagine di sfondo */
+    justify-content: center; /* Centra gli elementi lungo l'asse principale (orizzontalmente) */
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    display: none;
+}
