@@ -184,7 +184,7 @@ pulsante per home
     text-align: center; /* Opzionale: centra l'immagine orizzontalmente all'interno della colonna */
 }
 .image-column2 img {
-    max-width: 60%;
+    max-width: 40%;
     transform: rotate(+10deg); /* Ruota l'immagine di 45 gradi */
     height: 46%;
     display: block;
@@ -232,3 +232,4 @@ Overlay
     display: none;
 
 }
+
