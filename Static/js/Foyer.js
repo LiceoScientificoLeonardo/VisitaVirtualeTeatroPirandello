@@ -355,7 +355,7 @@ function Alfieri(hotSpotDiv, args) {
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('Alf'); 
   var testo = document.createElement('p');
-  testo.textContent = "Vittorio Alfieri è stato un celebre drammaturgo, poeta e scrittore italiano del XVIII secolo. Il dipinto di forma circolare, impreziosito da un elegante profilo dorato e da una cornice in stucco di colore bianco.";
+  testo.textContent = "Vittorio Alfieri è stato un celebre drammaturgo, poeta e scrittore italiano del XVIII secolo. Il dipinto di forma circolare, impreziosito da un elegante profilo dorato e da una cornice in stucco di colore bianco. Autori: Luigi Sacco e Antonio Tavella, 1879";
   testo.classList.add('text');
   var x = document.createElement('p');
   x.classList.add('text-x');
@@ -467,7 +467,7 @@ function Goldoni(hotSpotDiv, args) {
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('gol'); 
   var testo = document.createElement('p');
-  testo.textContent = "Carlo Goldoni (Venezia, 25 febbraio 1707 – Parigi, 6 febbraio 1793) è stato un celebre compositore italiano (della Repubblica di Venezia) considerato uno dei padri fondatori della commedia. Il dipinto, di forma circolare, è impreziosito da una corona dorata ed è contornato da una sottile cornice di colore bronzo e da una più spessa in stucco di colore bianco.";
+  testo.textContent = "Carlo Goldoni (Venezia, 25 febbraio 1707 – Parigi, 6 febbraio 1793) è stato un celebre compositore italiano (della Repubblica di Venezia) considerato uno dei padri fondatori della commedia. Il dipinto, di forma circolare, è impreziosito da una corona dorata ed è contornato da una sottile cornice di colore bronzo e da una più spessa in stucco di colore bianco. Autori: Luigi Sacco e Antonio Tavella, 1879";
   testo.classList.add('text');
   var x = document.createElement('p');
   x.classList.add('text-x');
@@ -536,7 +536,7 @@ function Metastasio(hotSpotDiv, args) {
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('met'); 
   var testo = document.createElement('p');
-  testo.textContent = "Pietro Trapassi, meglio conosciuto come Metastasio è stato un celebre poeta, librettista, drammaturgo del XVIII. Il dipinto di forma circolare, impreziosito da un elegante profilo dorato e da una cornice in stucco di colore bianco.";
+  testo.textContent = "Pietro Trapassi, meglio conosciuto come Metastasio è stato un celebre poeta, librettista, drammaturgo del XVIII. Il dipinto di forma circolare, impreziosito da un elegante profilo dorato e da una cornice in stucco di colore bianco. Autori: Luigi Sacco e Antonio Tavella, 1879";
   testo.classList.add('text');
   var x = document.createElement('p');
   x.classList.add('text-x');
@@ -604,7 +604,7 @@ function Monti(hotSpotDiv, args) {
   var Oggetto2 = document.createElement('div');
   Oggetto2.classList.add('mon'); 
   var testo = document.createElement('p');
-  testo.textContent = "Vincenzo Monti è stato un poeta, scrittore, traduttore e drammaturgo italiano; viene comunemente ritenuto l'esponente per eccellenza del Neoclassicismo italiano. Il dipinto di forma circolare, impreziosito da un elegante profilo dorato e da una cornice in stucco di colore bianco.";
+  testo.textContent = "Vincenzo Monti è stato un poeta, scrittore, traduttore e drammaturgo italiano; viene comunemente ritenuto l'esponente per eccellenza del Neoclassicismo italiano. Il dipinto di forma circolare, impreziosito da un elegante profilo dorato e da una cornice in stucco di colore bianco. Autori: Luigi Sacco e Antonio Tavella, 1879";
   testo.classList.add('text');
   var x = document.createElement('p');
   x.classList.add('text-x');
@@ -1194,4 +1194,5 @@ function PlanT(hotSpotDiv, args) {
     nuovoOggetto.style.display = "none"; 
   }
 }
+
 
