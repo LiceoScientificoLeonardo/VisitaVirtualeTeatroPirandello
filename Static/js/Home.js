@@ -8,8 +8,8 @@ var button2 = document.getElementById('start2');
 var button3 = document.getElementById('start3');
 var minmob = 220;
 var maxmob = 500;
-const isMobile = navigator.userAgentData.mobile;
-//const isMobile = window.matchMedia("(pointer: coarse)").matches;
+/*const isMobile = navigator.userAgentData.mobile;*/
+const isMobile = window.matchMedia("(pointer: coarse)").matches;
 console.log("Il codice e la grafica di questo sito sono stati realizzati da Flavio Caputo 2025/2026");
 function hide() {
     overlayimg.style.display = 'none';
@@ -106,4 +106,5 @@ window.addEventListener('scroll', function() {
     }
 
 });
+
 
