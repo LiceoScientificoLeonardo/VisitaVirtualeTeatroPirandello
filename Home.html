@@ -6,6 +6,28 @@
     <link rel="stylesheet" href="Static/css/Home.css"> 
     <title>Visita Digitale Teatro Pirandello</title>
     <link rel="icon" type="image/jpg" href="Static/pics/loghi/Leonardo-removebg-preview.png"> 
+    <style>
+    header {
+        position: relative;
+        z-index: 1000; /* Sopra TUTTO */
+    }
+
+    #start, #start2, #start3 {
+        position: relative;
+        z-index: 1001;
+        pointer-events: auto; /* Forza i click */
+    }
+
+    .des, #bc {
+        pointer-events: none; /* Ignora i click su questi div */
+    }
+
+    /* Opzionale: se .des è un overlay, riducilo */
+    .des {
+        height: 50px !important; /* Invece di 11 <br> */
+        position: static !important;
+    }
+</style>
 </head>
 <body>
     <header id="header">
@@ -60,3 +82,4 @@
 </body>
 <script src="Static/js/Home.js"></script>
 </html>
+
