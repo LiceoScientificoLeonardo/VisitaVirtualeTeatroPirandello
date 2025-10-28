@@ -3,193 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Visita digitale virtuale del Teatro Pirandello di Agrigento">
+    <link rel="stylesheet" href="Static/css/Home.css"> 
     <title>Visita Digitale Teatro Pirandello</title>
-    <link rel="icon" type="image/png" href="Static/pics/loghi/Leonardo-removebg-preview.png">
-    
+    <link rel="icon" type="image/jpg" href="Static/pics/loghi/Leonardo-removebg-preview.png"> 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            background: #000;
-            color: #fff;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        /* HEADER FISSO E CLICCABILE */
-        header {
-            padding: 1rem;
-            text-align: center;
-            background: rgba(0, 0, 0, 0.85);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-        }
-
+        /* Aggiungi questo per debug su mobile */
         header button {
-            background: #d4af37;
-            color: #000;
-            border: none;
-            padding: clamp(0.9rem, 3vw, 1.1rem) clamp(1.2rem, 4vw, 1.6rem);
-            margin: 0.5rem;
-            border-radius: 10px;
-            font-weight: 600;
-            font-size: clamp(15px, 4vw, 17px);
-            cursor: pointer;
-            transition: all 0.2s ease;
-            min-height: 48px; /* iOS accessibility */
-            touch-action: manipulation;
-            -webkit-tap-highlight-color: transparent;
-            -webkit-appearance: none;
-        }
-
-        header button:active {
-            background: #f1c40f;
-            transform: scale(0.98);
-        }
-
-        /* SEZIONE BACKGROUND CON OPACITÀ SICURA */
-        .des {
-            flex: 1;
-            min-height: 100vh;
-            background: 
-                /* linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), */
-                url('/Static/pics/Inizio/Teatro.jpeg') center/cover no-repeat;
-            background-attachment: fixed; /* Effetto parallax leggero */
             position: relative;
+            z-index: 1000;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent; /* Rimuove il flash blu su iOS */
         }
-
-        /* FOOTER */
-        #bc {
-            background: rgba(0, 0, 0, 0.92);
-            padding: 2rem 1rem;
-            text-align: center;
-            font-size: clamp(12px, 2.5vw, 14px);
+        .des {
+            height: 30vh; /* Al posto di 11 <br> */
+            pointer-events: none; /* IMPORTANTE: non intercetta i tap */
         }
-
-        .image-container {
-            overflow: hidden;
-            margin: 1.5rem 0;
-            --width: 110px;
-            --height: 75px;
-        }
-
-        .list {
-            display: flex;
-            gap: 15px;
-            width: max-content;
-            animation: scroll 22s linear infinite;
-            padding: 10px 0;
-        }
-
-        .item {
-            flex: 0 0 var(--width);
-            height: var(--height);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .item img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-            filter: brightness(0.9);
-        }
-
-        #testo3 { margin: 0.5rem 0; line-height: 1.6; }
-        #testo4 { margin: 0.4rem 0; font-size: 0.85rem; color: #ccc; }
-        #testo4 a { color: #d4af37; text-decoration: underline; }
-
-        @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-
-        /* MOBILE OPTIMIZATION */
-        @media (max-width: 768px) {
-            header { padding: 0.8rem; }
-            header button {
-                display: block;
-                width: 85%;
-                max-width: 300px;
-                margin: 0.7rem auto;
-            }
-            .image-container { --width: 85px; --height: 60px; }
-            .list { animation-duration: 18s; gap: 12px; }
-        }
-
-        @media (max-width: 480px) {
-            .image-container { --width: 70px; --height: 50px; }
-            #bc { padding: 1.5rem 0.8rem; }
-            header button { min-height: 50px; }
-        }
-
-        /* iOS SPECIFIC FIXES */
-        @supports (-webkit-touch-callout: none) {
-            .des { background-attachment: scroll; }
-            header button { -webkit-user-select: none; }
+        body {
+            touch-action: manipulation; /* Migliora reattività su mobile */
         }
     </style>
 </head>
 <body>
-
     <header id="header">
         <button id="start">Inizia il Tour</button>
         <button id="start2">Posizione Teatro</button>
-        <button id="start3">Sito Ufficiale</button>
+        <button id="start3">Sito</button>
     </header>
 
+    <!-- Sostituisci tutti i <br> con un div spaziatore -->
     <div class="des"></div>
 
-    <footer id="bc">
-        <div class="image-container">
-            <div class="list" id="logoList"></div>
-        </div>
-
-        <p id="testo3">Progetto realizzato dal <strong>Liceo Scientifico e Linguistico "Leonardo" di Agrigento</strong></p>
-        <p id="testo3">Dirigente Scolastica: <strong>Dott.ssa Patrizia Pilato</strong></p>
-        <p id="testo3">Docente: <strong>Prof. Fabio Zarbo</strong></p>
-        <p id="testo3">Alunno: <strong>Flavio Caputo</strong></p>
-        <br>
-        <p id="testo4">© 2025/2026 Flavio Caputo – Tutti i diritti riservati. Uso non commerciale.</p>
-        <p id="testo4">Pannellum.js – © 2011–2024 Matthew Petroff – Licenza 
-            <a href="https://github.com/mpetroff/pannellum/blob/master/COPYING" target="_blank">MIT</a>
-        </p>
-    </footer>
-
-    <!-- DUPLICAZIONE LOGHI -->
-    <script>
-        const logos = [
-            "di.JPEG", "Ag.png", "Agcap.jpeg", "Leonardo-removebg-preview.png",
-            "Fondazione.jpeg", "oia.jpeg", "ap.jpeg", "oa.jpeg", "sbca.jpeg", "up.jpeg"
-        ];
-        const basePath = "Static/pics/loghi/";
-        const list = document.getElementById('logoList');
-
-        // Duplica per loop infinito
-        [...logos, ...logos].forEach(src => {
-            const item = document.createElement('div');
-            item.className = 'item';
-            const img = document.createElement('img');
-            img.src = basePath + src;
-            img.alt = "Logo partner";
-            img.loading = "lazy";
-            item.appendChild(img);
-            list.appendChild(item);
-        });
-    </script>
-    <script src="Static/js/Home.js"></script>
+    <!-- Resto del contenuto -->
+    <div id="bc">
+        <!-- ... il tuo carousel e testi ... -->
+    </div>
 </body>
+<script src="Static/js/Home.js"></script>
 </html>
