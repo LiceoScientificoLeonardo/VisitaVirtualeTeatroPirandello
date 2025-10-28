@@ -7,7 +7,6 @@
     <title>Visita Digitale Teatro Pirandello</title>
     <link rel="icon" type="image/png" href="Static/pics/loghi/Leonardo-removebg-preview.png">
     
-    <!-- Stili CSS inline per responsività (puoi spostarli in Home.css se preferisci) -->
     <style>
         * {
             margin: 0;
@@ -16,54 +15,64 @@
         }
 
         body {
-            font-family: 'Arial', sans-serif;
-            /* background-image: url("/pics/Inizio/Teatro.jpeg"); Opacità per una migliore leggibilità */
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
             background: #000;
             color: #fff;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            -webkit-font-smoothing: antialiased;
         }
 
+        /* HEADER FISSO E CLICCABILE */
         header {
             padding: 1rem;
             text-align: center;
-            background-image: url("./Static/pics/Inizio/Teatro.jpeg"); /* Opacità per una migliore leggibilità */
-            /* background: rgba(0, 0, 0, 0.8); */
+            background: rgba(0, 0, 0, 0.85);
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
         }
 
         header button {
             background: #d4af37;
             color: #000;
             border: none;
-            padding: 0.8rem 1.2rem;
-            margin: 0.4rem;
-            border-radius: 8px;
-            font-weight: bold;
+            padding: clamp(0.9rem, 3vw, 1.1rem) clamp(1.2rem, 4vw, 1.6rem);
+            margin: 0.5rem;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: clamp(15px, 4vw, 17px);
             cursor: pointer;
-            transition: all 0.3s ease;
-            font-size: clamp(14px, 3vw, 16px);
+            transition: all 0.2s ease;
+            min-height: 48px; /* iOS accessibility */
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-appearance: none;
         }
 
-        header button:hover {
+        header button:active {
             background: #f1c40f;
-            transform: scale(1.05);
+            transform: scale(0.98);
         }
 
+        /* SEZIONE BACKGROUND CON OPACITÀ SICURA */
         .des {
             flex: 1;
             min-height: 100vh;
-            background: url('Static/pics/background.jpg') center/cover no-repeat;
+            background: 
+                /* linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), */
+                url('/Static/pics/Inizio/Teatro.jpeg') center/cover no-repeat;
+            background-attachment: fixed; /* Effetto parallax leggero */
             position: relative;
         }
 
+        /* FOOTER */
         #bc {
-            background: rgba(0, 0, 0, 0.85);
+            background: rgba(0, 0, 0, 0.92);
             padding: 2rem 1rem;
             text-align: center;
             font-size: clamp(12px, 2.5vw, 14px);
@@ -72,20 +81,21 @@
         .image-container {
             overflow: hidden;
             margin: 1.5rem 0;
-            --width: 120px;
-            --height: 80px;
+            --width: 110px;
+            --height: 75px;
         }
 
         .list {
             display: flex;
-            animation: scroll 25s linear infinite;
+            gap: 15px;
             width: max-content;
+            animation: scroll 22s linear infinite;
+            padding: 10px 0;
         }
 
         .item {
             flex: 0 0 var(--width);
             height: var(--height);
-            margin: 0 10px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -98,70 +108,38 @@
             filter: brightness(0.9);
         }
 
-        #testo3 {
-            margin: 0.5rem 0;
-            line-height: 1.5;
-        }
+        #testo3 { margin: 0.5rem 0; line-height: 1.6; }
+        #testo4 { margin: 0.4rem 0; font-size: 0.85rem; color: #ccc; }
+        #testo4 a { color: #d4af37; text-decoration: underline; }
 
-        #testo4 {
-            margin: 0.5rem 0;
-            font-size: 0.85rem;
-            color: #aaa;
-        }
-
-        #testo4 a {
-            color: #d4af37;
-            text-decoration: underline;
-        }
-
-        /* Animazione carousel infinito */
         @keyframes scroll {
             0% { transform: translateX(0); }
             100% { transform: translateX(-50%); }
         }
 
-        /* Duplicazione dinamica per loop fluido */
-        .list {
-            display: flex;
-        }
-
-        .list::after {
-            content: '';
-            flex: 0 0 100vw;
-        }
-
-        /* Responsività mobile */
+        /* MOBILE OPTIMIZATION */
         @media (max-width: 768px) {
-            header {
-                padding: 0.8rem;
-            }
-
+            header { padding: 0.8rem; }
             header button {
                 display: block;
-                width: 80%;
-                margin: 0.5rem auto;
-                padding: 1rem;
+                width: 85%;
+                max-width: 300px;
+                margin: 0.7rem auto;
             }
-
-            .image-container {
-                --width: 90px;
-                --height: 60px;
-            }
-
-            .list {
-                animation-duration: 20s;
-            }
+            .image-container { --width: 85px; --height: 60px; }
+            .list { animation-duration: 18s; gap: 12px; }
         }
 
         @media (max-width: 480px) {
-            .image-container {
-                --width: 70px;
-                --height: 50px;
-            }
+            .image-container { --width: 70px; --height: 50px; }
+            #bc { padding: 1.5rem 0.8rem; }
+            header button { min-height: 50px; }
+        }
 
-            #bc {
-                padding: 1.5rem 0.8rem;
-            }
+        /* iOS SPECIFIC FIXES */
+        @supports (-webkit-touch-callout: none) {
+            .des { background-attachment: scroll; }
+            header button { -webkit-user-select: none; }
         }
     </style>
 </head>
@@ -177,9 +155,7 @@
 
     <footer id="bc">
         <div class="image-container">
-            <div class="list" id="logoList">
-                <!-- Loghi duplicati per effetto continuo -->
-            </div>
+            <div class="list" id="logoList"></div>
         </div>
 
         <p id="testo3">Progetto realizzato dal <strong>Liceo Scientifico e Linguistico "Leonardo" di Agrigento</strong></p>
@@ -188,29 +164,30 @@
         <p id="testo3">Alunno: <strong>Flavio Caputo</strong></p>
         <br>
         <p id="testo4">© 2025/2026 Flavio Caputo – Tutti i diritti riservati. Uso non commerciale.</p>
-        <p id="testo4">Pannellum.js – © 2011–2024 Matthew Petroff – Licenza <a href="https://github.com/mpetroff/pannellum/blob/master/COPYING" target="_blank">MIT</a></p>
+        <p id="testo4">Pannellum.js – © 2011–2024 Matthew Petroff – Licenza 
+            <a href="https://github.com/mpetroff/pannellum/blob/master/COPYING" target="_blank">MIT</a>
+        </p>
     </footer>
 
-    <!-- Script per duplicare i loghi e JS esterno -->
+    <!-- DUPLICAZIONE LOGHI -->
     <script>
-        // Duplica i loghi per un carousel infinito fluido
         const logos = [
             "di.JPEG", "Ag.png", "Agcap.jpeg", "Leonardo-removebg-preview.png",
             "Fondazione.jpeg", "oia.jpeg", "ap.jpeg", "oa.jpeg", "sbca.jpeg", "up.jpeg"
         ];
-
-        const logoList = document.getElementById('logoList');
         const basePath = "Static/pics/loghi/";
+        const list = document.getElementById('logoList');
 
-        // Crea due copie per il loop continuo
+        // Duplica per loop infinito
         [...logos, ...logos].forEach(src => {
             const item = document.createElement('div');
             item.className = 'item';
             const img = document.createElement('img');
             img.src = basePath + src;
             img.alt = "Logo partner";
+            img.loading = "lazy";
             item.appendChild(img);
-            logoList.appendChild(item);
+            list.appendChild(item);
         });
     </script>
     <script src="Static/js/Home.js"></script>
