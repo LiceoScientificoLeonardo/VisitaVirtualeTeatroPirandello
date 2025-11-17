@@ -1228,7 +1228,7 @@ pulsante per home
     left: 20px;
     top: -500%;
 }
-.ful {
+.zeus {
     position: absolute;
     cursor: pointer; /* Imposta il cursore a pointer (mano) quando passi sopra l'oggetto */
     width: 240px;
@@ -2326,3 +2326,4 @@ pulsante per home
     }
 
 }
+
