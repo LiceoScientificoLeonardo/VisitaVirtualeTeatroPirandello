@@ -5678,7 +5678,7 @@ function ztest4(hotSpotDiv, args) {
   Oggetto2.style.height = "260px";
   Oggetto2.style.bottom = "-115px";
   var Oggetto = document.createElement('div');
-  Oggetto.classList.add('ztest');
+  Oggetto.classList.add('zeus');
   var x = document.createElement('p');
   x.classList.add('text-x');
   x.textContent = "x";
@@ -6396,4 +6396,5 @@ function aqu1(hotSpotDiv, args) {
   hotSpotDiv.onmouseleave = function() {
     nuovoOggetto.style.display = "none"; 
   }
+
 }
