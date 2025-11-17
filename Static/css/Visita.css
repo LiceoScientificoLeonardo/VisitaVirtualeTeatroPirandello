@@ -1228,6 +1228,19 @@ pulsante per home
     left: 20px;
     top: -500%;
 }
+.ful {
+    position: absolute;
+    cursor: pointer; /* Imposta il cursore a pointer (mano) quando passi sopra l'oggetto */
+    width: 240px;
+    height: 240px;
+    background: url('../pics/monete/19.jpg') no-repeat center center;
+    background-size: cover;
+    display: none;
+    border: 10px solid #ddd; /* Definisce uno stile di bordo */
+    border-bottom: 20px solid #ddd;
+    left: 20px;
+    top: -500%;
+}
 .para {
     position: absolute;
     cursor: pointer; /* Imposta il cursore a pointer (mano) quando passi sopra l'oggetto */
@@ -2311,4 +2324,5 @@ pulsante per home
         left: 20px;
         top: -500%;
     }
+
 }
